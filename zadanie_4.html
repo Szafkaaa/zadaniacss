@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sposoby podłączania styli do strony</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+
+<table>
+    <tr>
+        <th>Sposób</th>
+        <th>Komenda</th>
+    </tr>
+    <tr>
+        <td>1. Zewnętrzny arkusz stylów</td>
+        <td>&lt;head&gt;<br>
+            &emsp;&lt;link rel="Stylesheet" type="text/css" href="style.css" /&gt;<br>
+            &lt;/head&gt;</td>
+    </tr>
+    <tr>
+        <td>2. Styl lokalny</td>
+        <td>&lt;selektor style="cecha1: wartość1; cecha2: wartość2..."&gt;...&lt;/selektor&gt;</td>
+    </tr>
+    <tr>
+        <td>3. Wewnętrzny arkusz stylów</td>
+        <td>&lt;head&gt;<br>
+            &emsp;&lt;style type="text/css"&gt;<br>
+            &emsp;&emsp;selektor1 { cecha: wartość; cecha2: wartość2... }<br>
+            &emsp;&emsp;selektor2 { cecha: wartość; cecha2: wartość2... }<br>
+            &emsp;&lt;/style&gt;<br>
+            &lt;/head&gt;</td>
+    </tr>
+    <tr>
+        <td>4. Alternatywny arkusz stylów</td>
+        <td>&lt;head&gt;<br>
+            &emsp;&lt;link rel="Stylesheet" type="text/css" href="style.css" title="Nazwa domyślna" /&gt;<br>
+            &emsp;&lt;link rel="Alternate stylesheet" type="text/css" href="style1.css" title="Nazwa 1" /&gt;<br>
+            &emsp;&lt;link rel="Alternate stylesheet" type="text/css" href="style2.css" title="Nazwa 2" /&gt;<br>
+            &lt;/head&gt;</td>
+    </tr>
+    <tr>
+        <td>5. Import arkusza stylów</td>
+        <td>&lt;style type="text/css"&gt;<br>
+            &emsp;@import url(adres zewnętrznego arkusza stylów);<br>
+            &lt;/style&gt;</td>
+    </tr>
+</table>
+
+<p><strong>Kaskadowość stylów:</strong><br>
+    Kaskadowość stylów określa pierwszeństwo w oddziaływaniu na te same elementy strony stylów z różnych źródeł (lokalny, zewnętrzny, wewnętrzny itp.). Style tworzą hierarchię tworząc kaskadę, dlatego taka nazwa. Kaskadowość stylów pozwala zatem pracować z kilkoma źródłami stylów, bez obawy o wystąpienie konfliktów.</p>
+
+<p><strong>Priorytet ważności stylów (pierwszeństwo):</strong><br>
+    1. Styl lokalny<br>
+    2. Rozciąganie stylu (SPAN)<br>
+    3. Wydzielone bloki (DIV)<br>
+    4. Wewnętrzny arkusz stylów<br>
+    5. Zewnętrzny arkusz stylów<br>
+    6. Import arkusza stylów<br>
+    7. Domyślne ustawienia przeglądarki</p>
+
+<p>Style o wyższym priorytecie ważności (na początku listy) mają pierwszeństwo w modyfikowaniu elementów dokumentu. Style niżej w hierarchii mogą zmienić formatowanie jakiegoś elementu, tylko jeśli style o wyższym priorytecie nie dotyczą tego konkretnego elementu. Na szczególną uwagę zasługuje również fakt, że style CSS z dowolnego źródła zawsze są ważniejsze niż atrybuty prezentacyjne przypisane elementom bezpośrednio w kodzie HTML, mimo iż wydawać by się mogło, że powinna tutaj zachodzić zasada taka jak w przypadku stylu lokalnego.</p>
+
+</body>
+</html>
