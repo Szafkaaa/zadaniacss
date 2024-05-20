@@ -1,0 +1,18 @@
+.first{
+    background-color: #FCE984;
+    font-size: 19pt;
+}
+
+.second {
+    background-color: #FC3091;
+    color: #09772a;
+    font-size: 17pt;
+    font-weight: bold;
+}
+
+.third {
+    background-color: #B5FC30;
+    color: yellow;
+    font-size: 10pt;
+    font-family: Arial;
+}
