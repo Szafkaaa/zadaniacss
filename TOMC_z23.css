@@ -1,0 +1,39 @@
+
+p#pogrubienie_tomczak {
+    font-size: 32px; 
+    color: #dc61fa;
+}
+
+p#pochylona_tomczak {
+    font-size: 37pt; 
+    color: #ffae52; 
+    font-style: italic;
+}
+
+p#index_gorny_tomczak {
+    font-size: 1.2cm; 
+    color: #deaa1d;
+    vertical-align: super;
+}
+
+p#index_dolny_tomczak {
+    font-size: 1.9cm; 
+    color: rgb(64%, 96%, 90%); 
+    vertical-align: sub;
+}
+
+p#mono_tomczak {
+    font-size: 42px; 
+    color: #22e668; 
+    font-family: "Courier New", monospace;
+}
+
+p#powiekszenie_tomczak {
+    font-size: 45px;
+    color: #8b6bca; 
+}
+
+p#pomniejszenie_tomczak {
+    font-size: 10px; 
+    color: rgb(75%, 64%, 25%);
+}
